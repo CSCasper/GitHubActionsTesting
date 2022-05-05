@@ -30,7 +30,7 @@ class HumanTest {
 
 	@Test
 	void setAge() {
-		man.setAge(30);
+		man.setAge(31);
 		assertEquals(30, man.getAge());
 	}
 }
