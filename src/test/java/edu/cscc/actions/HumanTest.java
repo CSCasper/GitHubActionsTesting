@@ -1,9 +1,7 @@
+package edu.cscc.actions;
+
 import static org.junit.jupiter.api.Assertions.*;
-
-import edu.cscc.actions.Human;
 import org.junit.jupiter.api.*;
-
-import java.util.Date;
 
 class HumanTest {
 
@@ -14,24 +12,25 @@ class HumanTest {
 		man = new Human("Bob", 42);
 	}
 
-	@org.junit.jupiter.api.Test
+	@Test
 	void getName() {
 		assertEquals("Bob", man.getName());
 	}
 
-	@org.junit.jupiter.api.Test
+	@Test
 	void setName() {
-		man.setName("Jeff");
+		man.setName("Geoff");
 		assertEquals("Jeff", man.getName());
 	}
 
-	@org.junit.jupiter.api.Test
+	@Test
 	void getAge() {
 		assertEquals(42, man.getAge());
 	}
 
-	@org.junit.jupiter.api.Test
+	@Test
 	void setAge() {
+		man.setAge(30);
 		assertEquals(30, man.getAge());
 	}
 }
