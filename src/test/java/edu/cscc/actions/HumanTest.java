@@ -19,7 +19,7 @@ class HumanTest {
 
 	@Test
 	void setName() {
-		man.setName("Geoff");
+		man.setName("Jeff");
 		assertEquals("Jeff", man.getName());
 	}
 
